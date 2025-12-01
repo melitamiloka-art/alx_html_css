@@ -1,0 +1,146 @@
+body {
+    font-family: var(--font-main);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: var(--secondary-color);
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff7d7d;
+}
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+.what-we-do {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white;
+    color: #000;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    font-size: 18px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.service {
+    max-width: 230px;
+}
+
+.service span {
+    font-size: 50px;
+    color: #ff6565;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
