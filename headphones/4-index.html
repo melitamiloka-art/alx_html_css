@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+
+    <link rel="stylesheet" href="holberton_school-icon/style.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #ff6565;
+            --text-color: #ffffff;
+            --font-main: 'Source Sans Pro', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-color);
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 10;
+            background-image: url("images/header_background.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 100vh;
+            background-image: url("images/headphones_hero_1.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ff7d7d;
+        }
+
+        
+        .what-we-do {
+            padding: 80px 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .section-description {
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            font-size: 18px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .service {
+            max-width: 230px;
+        }
+
+        .service span {
+            font-size: 50px;
+            color: #ff6565;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <div class="logo">
+                <img src="images/logo_headphones.png" alt="Headphones logo">
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#what-we-do">What we do</a></li>
+                    <li><a href="#our-results">Our results</a></li>
+                    <li><a href="#contact-us">Contact us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+
+            <p class="hero-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+                
+            <button class="btn">CALL TO ACTION</button>
+
+            <p class="hero-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Praesent vitae eros eget tellus tristique bibendum. 
+                Donec rutrum sed sem quis venenatis.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="what-we-do" class="what-we-do">
+        <div class="container">
+
+            <h2>What we do…</h2>
+
+            <p class="section-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="services">
+
+                <div class="service">
+                    <span class="holberton_school-icon-ic_sound"></span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="service">
+                    <span class="holberton_school-icon-ic_video"></span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="service">
+                    <span class="holberton_school-icon-ic_music"></span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="service">
+                    <span class="holberton_school-icon-ic_hearing"></span>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+            </div>
+            <section id="our-results" class="our-results">
+    <div class="container">
+
+        <h2>Our results</h2>
+
+        <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <div class="results-items">
+
+            <div class="result-box">
+                <div class="circle">+20%</div>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="result-box">
+                <div class="circle">+40%</div>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="result-box">
+                <div class="circle">+60%</div>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="result-box">
+                <div class="circle">+90%</div>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+        </div>
+<section id="contact-us" class="contact">
+    <div class="container">
+
+        <h2>Contact us</h2>
+
+        <form class="contact-form">
+
+            <div class="form-group">
+                <input type="text" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="email" placeholder="Your email" required>
+            </div>
+
+            <div class="form-group">
+                <textarea placeholder="Your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn contact-btn">CALL TO ACTION</button>
+
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-content">
+
+        <div class="footer-logo">
+            <img src="images/logo_headphones.png" alt="Headphones logo">
+        </div>
+
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#what-we-do">What we do</a></li>
+                <li><a href="#our-results">Our results</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <p class="footer-copy">
+            &copy; 2025 Headphones. All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+</body>
+</html>
